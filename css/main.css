@@ -7,6 +7,14 @@
     font-family: "Gilroy", sans-serif;
 }
 
+.div round{
+    margin: 222px;
+    left: 200px;
+    cursor: pointer;
+
+
+}
+
 /* Side bar css start */
 .wrapper {
     display: flex;
@@ -53,11 +61,16 @@
     align-items: center;
     justify-content: space-between;
 }
+.div h1{
+    background: url("https://st.depositphotos.com/1162190/4854/i/600/depositphotos_48548449-stock-photo-eid-mubarak-background.jpg");
+}
 
 .logo {
     padding: 30px 25px;
 }
-
+.view img p{
+    backdrop-filter: blur(288,);
+}
 .logo-link {
     display: block;
     width: 100%;
@@ -159,4 +172,8 @@
     position: fixed;
     right: 30px;
     bottom: 30px;
+}
+.h1 view{
+    justify-content: center;
+    align-items: center;
 }
