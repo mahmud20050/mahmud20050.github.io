@@ -177,3 +177,10 @@
     justify-content: center;
     align-items: center;
 }
+.img navbar{
+    backdrop-filter: blur();
+
+}
+.mahmud{
+    background: url("https://www.ixbt.com/img/n1/news/2019/2/2/google-photos_large.jpg") no-repeat center center;
+}
