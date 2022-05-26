@@ -7,7 +7,7 @@
     font-family: "Gilroy", sans-serif;
 }
 
-.div .round{
+.div .round {
     margin: 222px;
     left: 200px;
     cursor: pointer;
@@ -50,8 +50,8 @@
 }
 
 .sidebar-lists_item:hover .sidebar-icon path,
-.sidebar-lists_item:hover  a,
-.sidebar-lists_item:hover  {
+.sidebar-lists_item:hover a,
+.sidebar-lists_item:hover {
     fill: #00A5FF;
     color: #00A5FF;
 }
@@ -61,16 +61,19 @@
     align-items: center;
     justify-content: space-between;
 }
-.div h1{
+
+.div h1 {
     background: url("https://st.depositphotos.com/1162190/4854/i/600/depositphotos_48548449-stock-photo-eid-mubarak-background.jpg");
 }
 
 .logo {
     padding: 30px 25px;
 }
-.view img p{
+
+.view img p {
     backdrop-filter: blur(288,);
 }
+
 .logo-link {
     display: block;
     width: 100%;
@@ -173,7 +176,8 @@
     right: 30px;
     bottom: 30px;
 }
-.h1 view{
+
+.h1 view {
     justify-content: center;
     align-items: center;
 }
@@ -186,7 +190,7 @@
 .item {
     display: flex;
     align-items: center;
-    width: 8.33%;
+    width: 100%;
     height: 400px;
     padding: 30px;
 }
@@ -208,19 +212,19 @@
 /*    background: red;*/
 /*}*/
 
-.item:nth-child(1) {
+.item_col:nth-child(1) .item {
     background: red;
 }
 
-.item:nth-child(2) {
+.item_col:nth-child(2) .item {
     background: green;
 }
 
-.item:nth-child(3) {
+.item_col:nth-child(3) .item {
     background: yellow;
 }
 
-.item:nth-child(4) {
+.item_col:nth-child(4) .item {
     background: blue;
 }
 
@@ -256,6 +260,10 @@
     background: chocolate;
 }
 
+.item:nth-child(13) {
+    background: black;
+}
+
 .item_img {
     width: 100%;
     height: 200px;
@@ -267,41 +275,65 @@
     height: inherit;
 }
 
+.shadow-custom-inset {
+    background: white;
+    width: 100px;
+    height: 100px;
+    transition: all 1s ease-in-out;
+}
+
+.shadow-custom-inset:hover {
+    box-shadow: inset 0 0 6px 10px rgba(204, 204, 204, 0.3);
+}
+
+.shadow-custom-outset {
+    background: white;
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.shadow-custom-outset:hover {
+    box-shadow: 0 0 6px 10px #ccc;
+}
+
 
 /* Media style start */
-@media (max-width: 1366px) {
-    /* Note book */
-    .item {
-        padding: 20px;
-    }
-}
+/*@media (max-width: 1366px) {*/
+/*    !* Note book *!*/
+/*    .item {*/
+/*        padding: 20px;*/
+/*    }*/
+/*}*/
 
 
-@media (max-width: 1024px) {
-    /* iPad Pro */
-    .item {
-        width: 50%;
-        padding: 15px;
-    }
-}
+/*@media (max-width: 1024px) {*/
+/*    !* iPad Pro *!*/
+/*    .item {*/
+/*        width: 50%;*/
+/*        padding: 15px;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 768px) {
-    /* All Mobile */
-    .item {
-        flex-wrap: wrap;
-        height: auto;
-        padding: 10px;
-    }
-}
+/*@media (max-width: 768px) {*/
+/*    !* All Mobile *!*/
+/*    .item {*/
+/*        flex-wrap: wrap;*/
+/*        height: auto;*/
+/*        padding: 10px;*/
+/*    }*/
+/*}*/
 
-@media (max-width: 576px) {
-    /* All Mobile */
-    .item {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
-}
+/*@media (max-width: 576px) {*/
+/*    !* All Mobile *!*/
+/*    .item {*/
+/*        width: 100%;*/
+/*        height: auto;*/
+/*        padding: 10px;*/
+/*    }*/
+/*}*/
 
 
 /* Media style end */
