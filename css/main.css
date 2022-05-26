@@ -5,6 +5,30 @@
     list-style: none;
     box-sizing: border-box;
     font-family: "Gilroy", sans-serif;
+    background-image: url("https://www.interfax.ru/ftproot/photos/photostory/2022/04/29/week/zah.jpg");
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-position: center;
+justify-content: center;
+    align-items: center;
+background-repeat: no-repeat;
+    background-size: auto;
+    border-bottom-style: dotted;
+    border-bottom-width: thin;
+    border-collapse: separate;
+    border-color: red;
+    border-image: url("https://www.interfax.ru/ftproot/photos/photostory/2022/04/29/week/zah.jpg");
+    border-image-repeat: repeat;
+}
+.mahmud{
+
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content:flex-end;
+}
+.main-body{
+    display: flex;
 }
 
 .div round{
@@ -62,7 +86,7 @@
     justify-content: space-between;
 }
 .div h1{
-    background: url("https://st.depositphotos.com/1162190/4854/i/600/depositphotos_48548449-stock-photo-eid-mubarak-background.jpg");
+    background: url(https://fazo.tv/images/230e8ef425dc0a8eb6faf8fcc2b16a94.jpg) no-repeat center center;
 }
 
 .logo {
@@ -181,6 +205,4 @@
     backdrop-filter: blur();
 
 }
-.mahmud{
-    background: url("https://www.ixbt.com/img/n1/news/2019/2/2/google-photos_large.jpg") no-repeat center center;
-}
+.
