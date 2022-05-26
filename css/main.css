@@ -5,30 +5,6 @@
     list-style: none;
     box-sizing: border-box;
     font-family: "Gilroy", sans-serif;
-    background-image: url("https://www.interfax.ru/ftproot/photos/photostory/2022/04/29/week/zah.jpg");
-    background-attachment: fixed;
-    background-origin: content-box;
-    background-position: center;
-justify-content: center;
-    align-items: center;
-background-repeat: no-repeat;
-    background-size: auto;
-    border-bottom-style: dotted;
-    border-bottom-width: thin;
-    border-collapse: separate;
-    border-color: red;
-    border-image: url("https://www.interfax.ru/ftproot/photos/photostory/2022/04/29/week/zah.jpg");
-    border-image-repeat: repeat;
-}
-.mahmud{
-
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content:flex-end;
-}
-.main-body{
-    display: flex;
 }
 
 .div round{
@@ -86,7 +62,7 @@ background-repeat: no-repeat;
     justify-content: space-between;
 }
 .div h1{
-    background: url(https://fazo.tv/images/230e8ef425dc0a8eb6faf8fcc2b16a94.jpg) no-repeat center center;
+    background: url("https://st.depositphotos.com/1162190/4854/i/600/depositphotos_48548449-stock-photo-eid-mubarak-background.jpg");
 }
 
 .logo {
@@ -201,8 +177,131 @@ background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
 }
-.img navbar{
-    backdrop-filter: blur();
 
+.row {
+    display: flex;
+    margin-top: 40px;
 }
-.
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 8.33%;
+    height: 400px;
+    padding: 30px;
+}
+
+/*.item:nth-child(odd) { !* Odd = Toq *!
+    background: black;
+}*/
+
+/*.item:first-child { !* Odd = Toq *!
+    background: black;
+}*/
+
+/*.item:last-child {
+    background: black;
+}*/
+
+
+/*.item:nth-child(even) { !* even = Juft *!*/
+/*    background: red;*/
+/*}*/
+
+.item:nth-child(1) {
+    background: red;
+}
+
+.item:nth-child(2) {
+    background: green;
+}
+
+.item:nth-child(3) {
+    background: yellow;
+}
+
+.item:nth-child(4) {
+    background: blue;
+}
+
+.item:nth-child(5) {
+    background: purple;
+}
+
+.item:nth-child(6) {
+    background: chocolate;
+}
+
+.item:nth-child(7) {
+    background: red;
+}
+
+.item:nth-child(8) {
+    background: green;
+}
+
+.item:nth-child(9) {
+    background: yellow;
+}
+
+.item:nth-child(10) {
+    background: blue;
+}
+
+.item:nth-child(11) {
+    background: purple;
+}
+
+.item:nth-child(12) {
+    background: chocolate;
+}
+
+.item_img {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+
+.item_img img {
+    height: inherit;
+}
+
+
+/* Media style start */
+@media (max-width: 1366px) {
+    /* Note book */
+    .item {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    /* iPad Pro */
+    .item {
+        width: 50%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* All Mobile */
+    .item {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* All Mobile */
+    .item {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+
+/* Media style end */
