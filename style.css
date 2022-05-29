@@ -20,7 +20,7 @@ nav{
     margin-left: 80px;
 }
 nav h1{
-    color: red;
+    color: #ffffff;
     display: inline-block;
     font-size: 30px;
     font-weight: 700;
@@ -87,5 +87,10 @@ div button:hover{
     background: #fa4569;
     color: #ffffff;
     transition: 0.5s;
+}
+nav h1:hover{
+    background: #fa4569;
+    color: #ffffff;
+    transition: 0.5s; border-radius: 20px;
 }
 
