@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
 }
 
 
@@ -106,4 +106,25 @@ navbar{
     left: 0;
     top: 100%;
     border-color:darkblue;
+}
+.item:nth-child(1){
+    margin-top: 5px;
+    background: black;
+}
+.item{
+  background: #0a53be;
+}
+.item{
+    background: #0c4128;
+}
+.item{
+    background: #5c636a;
+}
+.item{
+    background: #31d2f2;
+}
+
+
+@media (max-width:400px) {
+
 }
