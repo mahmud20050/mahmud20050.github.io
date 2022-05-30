@@ -6,50 +6,81 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <section>
     <header>
-        <nav>
-            <h1>INAMARKA BOZOR</h1>
-     
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container">
+                <a href="sidebar.html" class="navbar-brand m-0">
+                    <img src="images/wheels.webp" class="rotate-animation" width="50" height="50" alt="">
+                </a>
 
-            <ul>
-                <li><a href="#">MASHINALR</a></li>
-                <li><a href="#">RASIMLAR</a></li>
-                <li><a href="#">VIDEO</a></li>
-                <li><a href="#">ELON BERISH</a></li>
-            </ul>
+                <a href="https://www.facebook.com/" target="_blank" class="d-block icon text-center rounded-circle p-2">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <form class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="sidebar.html" class="nav-link active">MASHINALR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">RASIMLAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">VIDEO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ELON BERISH</a
+                            ></li>
+                    </ul>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </nav>
-        <img src="images/menu.png" class="menu-icon" alt="">
     </header>
 
 
-    <div>
+    <div class="header-title">
         <h1>TELEGRAM KANALIMIZ</h1>
-        <a href="https://t.me/InomarkaBozor">
-        <button class="blank">KIRISH</button>
-        <button>AZO BOLISH</button>
+        <div>
+            <a href="https://t.me/InomarkaBozor" target="_blank">
+                KIRISH
             </a>
+            <a href="https://t.me/InomarkaBozor">
+                AZO BOLISH
+            </a>
+        </div>
+
     </div>
 </section>
-<div class="row">
-    <div class="item">tgwhrehwfgwf</div>
-        <div class="item">
-            loren20gwnththth
+<div class="container">
+    <div class="row">
+        <div class="col-2 item">
+            Lorem ipsum.
         </div>
-        <div class="item">
-            loren20gwnththth
+        <div class="col-2 item">
+            Lorem ipsum.
         </div>
-        <div class="item">
-            loren20gwnththth
+        <div class="col-2 item">
+            Lorem ipsum.
         </div>
-        <div class="item">
-            loren20gwnththth
+        <div class="col-2 item">
+            Lorem ipsum.
         </div>
+        <div class="col-2 item">
+            Lorem ipsum.
+        </div>
+    </div>
 </div>
 
-
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

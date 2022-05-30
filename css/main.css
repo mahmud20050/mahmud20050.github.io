@@ -338,3 +338,131 @@
 
 
 /* Media style end */
+
+.custom-animation {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first {
+    width: 215px;
+    height: 215px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+    animation: easy 5.4s linear infinite alternate;
+}
+
+.second {
+    width: 230px;
+    height: 230px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+    animation: easy 5.1s linear infinite alternate;
+}
+
+.third {
+    width: 245px;
+    height: 245px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+    animation: easy 4.8s linear infinite alternate;
+}
+
+.four {
+    width: 260px;
+    height: 260px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+    animation: easy 4.5s linear infinite alternate;
+}
+
+.five {
+    width: 275px;
+    height: 275px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+    animation: easy 4.2s linear infinite alternate;
+}
+
+.six {
+    width: 290px;
+    height: 290px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+    animation: easy 3.9s linear infinite alternate;
+}
+
+.seven {
+    width: 305px;
+    height: 305px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+    animation: easy 3.6s linear infinite alternate;
+}
+
+.eight {
+    width: 320px;
+    height: 320px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+    animation: easy 3.3s linear infinite alternate;
+}
+
+.nine {
+    width: 335px;
+    height: 335px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(1);
+    animation: easy 3s linear infinite alternate;
+}
+
+
+@keyframes easy {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    75% {
+        transform: scale(1.6);
+    }
+
+    100% {
+        transform: scale(1.8);
+    }
+}
+
