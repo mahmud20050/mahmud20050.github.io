@@ -144,7 +144,7 @@ navbar{
     color: white;
     cursor: pointer;
     transition: 1s linear all;
-    margin-right: 20px;
+    margin-right: 8px;
 }
 
 .icon:hover {
