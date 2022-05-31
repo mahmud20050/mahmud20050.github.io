@@ -82,6 +82,7 @@ nav ul li a:hover::after{
     color: #ffffff;
     transition: 0.5s;
     border-radius: 20px;
+    margin-right: 20px;
 }
 nav h1:hover{
     background:  #fa4569;
@@ -93,7 +94,8 @@ navbar{
     position: absolute;
     width: 100%;
     height: 100vh;
-    left: 0;
+    left: 20px;
+    right: 20px;
     top: 100%;
     border-color:darkblue;
 }
@@ -142,6 +144,7 @@ navbar{
     color: white;
     cursor: pointer;
     transition: 1s linear all;
+    margin-right: 20px;
 }
 
 .icon:hover {
