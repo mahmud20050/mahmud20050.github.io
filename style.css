@@ -1,47 +1,126 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
-    font-family:"Poppins" , sans-serif;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
 }
-body{
+
+:root {
+    --red: #ef5050;
+    --light-black: #1d1d1d;
+    --gray: #373737;
+    --liht-grey: #f9f9f9;
+}
+
+.root-red {
+    color: var(--red);
+}
+
+.header {
+    background: var(--light-black);
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.logo-text {
+    text-transform: lowercase;
+    color: #ffff;
+}
+
+.logo img {
+    animation: rotate_360 2s linear infinite;
+}
+
+.mahmud {
+    display: flex;
+    margin-left: 30px;
+    padding: 30px;
+    height: 20px;
+    align-items: center;
+    border-bottom:none;
+    border: black;
+    color: #ffff;
+}
+.mahmud ul li a{
+    color: #ffff;
+    border: none;
+    border-bottom: black;
+}
+.justify-content-end i{
+    margin-left: 30px;
+}
+.justify-content-end a{
+    margin: 100px;
+    justify-content: right;
+}
+.img a img{
+    width: 1500px;
+    height: 500px;
+}
+@keyframes rotate_360 {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
     position: relative;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 68px;
     background: #11101d;
-    padding: 3px 14px;
+    padding: 3px 14px 1px 1px;
     transition: 2s;
-    justify-content: center;
-    align-items: center;
 }
-.sidebar:hover{
+
+.sidebar:hover {
     width: 240px;
     transition: 2s;
 }
-.sidebar .logo_content .logo{
+
+.sidebar .logo_content .logo {
     color: #ffff;
     display: flex;
     height: 50px;
     width: 100%;
-    align-items: center;
 }
-.logo_content .logo i{
+
+.logo_content .logo i {
+    padding: 0;
     font-size: 20px;
     font-weight: 400;
 }
-.logo_content .logo .logo_name{
+
+.logo_content .logo .logo_name {
     font-size: 20px;
     font-weight: 400;
 }
+
 .sidebar #mahmud {
     position: absolute;
     color: #ffff;
@@ -50,28 +129,36 @@ body{
     font-size: 20px;
     height: 50px;
     width: 50px;
-    text-align: center;
-    line-height: 30px;
+
+    line-height: 3px;
     transform: translateX(-50%);
 }
-.sidebar ul{
+
+.sidebar ul {
     margin-top: 20px;
 }
-.sidebar ul li{
+
+ul.nav_list {
+    padding-left: 0;
+}
+
+.sidebar ul li {
     position: relative;
     height: 50px;
     width: 100%;
-    margin: 0  5px;
+    margin: 0 5px 0 0px;
     list-style: none;
-    line-height: 50px;
+    line-height: 5px;
 }
-.sidebar ul li .tooltip{
+
+.sidebar ul li .tooltip {
+    padding-left: 0;
     position: absolute;
-    left: 122px;
+    left: 100px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 5px;
-    height: 35px;
+    height: 30px;
     width: 122px;
     background: #fff;
     line-height: 35px;
@@ -81,12 +168,20 @@ body{
     opacity: 0;
     pointer-events: none;
 }
-.sidebar ul li:hover .tooltip{
+
+.sidebar ul li:hover .tooltip {
+    padding-left: 0;
     transition: all 0.4s ease;
     opacity: 1;
     top: 50%;
+    width: 100px;
+    left: 68px;
+    border-radius: 20px;
+    color: #F1F6FB;
+    background: black;
 }
-.sidebar ul li input{
+
+.sidebar ul li input {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -96,11 +191,12 @@ body{
     outline: none;
     border: none;
     background: #1d1b31;
-    padding-left: 40px;
+    padding-left: 35px;
     font-size: 18px;
     color: #ffff;
 }
-.sidebar ul li a{
+
+.sidebar ul li a {
     color: #ffff;
     display: flex;
     align-items: center;
@@ -108,24 +204,29 @@ body{
     transition: all 0.4s ease;
     border-radius: 15px;
 }
-.sidebar ul li a:hover{
-    color: #11101d ;
+
+.sidebar ul li a:hover {
+    color: #11101d;
     background: #fff;
+
 }
-.sidebar ul li .bx-search{
+
+.sidebar ul li .bx-search {
     position: absolute;
     z-index: 99;
     color: #fff;
     font-size: 22px;
 }
-.sidebar ul li i{
+
+.sidebar ul li i {
     height: 50px;
     min-width: 50px;
     border-radius: 20px;
     line-height: 50px;
     text-align: center;
 }
-.sidebar .profile_content{
+
+.sidebar .profile_content {
     position: absolute;
     color: #ffff;
     bottom: 0;
@@ -133,33 +234,40 @@ body{
     width: 100%;
 
 }
-.sidebar .profile_content .profile{
+
+.sidebar .profile_content .profile {
     position: relative;
     padding: 10px 6px;
     height: 60px;
     background: #1d1b31;
 }
-.profile_content .profile .profile_details{
+
+.profile_content .profile .profile_details {
     display: flex;
     align-items: center;
 }
-.profile .profile_details img{
+
+.profile .profile_details img {
     height: 45px;
     width: 45px;
     object-fit: cover;
     border-radius: 15px;
 }
-.profile .profile_details .name_jop{
+
+.profile .profile_details .name_jop {
     margin-left: 10px;
 }
-.profile .profile_details .name{
+
+.profile .profile_details .name {
     font-size: 15px;
     font-weight: 400;
 }
-.profile .profile_details .jop{
+
+.profile .profile_details .jop {
     font-size: 12px;
 }
-.profile #log_out{
+
+.profile #log_out {
     position: absolute;
     left: 88%;
     bottom: 5px;
@@ -169,16 +277,26 @@ body{
     font-size: 30px;
     border-radius: 15px;
 }
-.home_content{
+
+.home_content {
     position: absolute;
     height: 100%;
     width: calc(100% - 240px);
     left: 240px;
     top: 30px;
 }
-.home_content .text{
+
+.home_content .text {
     font-size: 25px;
     font-weight: 500;
     color: #1d1b31;
     margin: 1px;
+}
+
+.header {
+    display: flex;
+}
+
+.row {
+    display: flex;
 }
