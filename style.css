@@ -67,7 +67,7 @@
     margin: 100px;
     justify-content: right;
 }
-.img a img{
+.img a img .carousel-item{
     width: 1500px;
     height: 500px;
 }
