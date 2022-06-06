@@ -57,12 +57,38 @@
     color: #ffff;
 }
 .work-text{
+    text-decoration: none;
     color: #727272;
 }
 .work-text:hover{
-    color: red;
+    color: blue;
 }
-
+.phone{
+    display: flex;
+}
+.phone-icon{
+    font-size: 45px;
+}
+.phone-title{
+    font-size: 14px;
+    color: #616161;
+    margin: 0;
+    text-decoration: none;
+}
+.phone-text{
+    font-size:14px;
+    color: #ffff;
+    text-decoration: none;
+}
+.icon{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:1px solid #ffff;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .logo img {
@@ -124,7 +150,7 @@ nav ul li a:after {
 
 nav ul li a:hover::after {
     height: 4px;
-    background: red;
+    background: #31d2f2;
     transform: translateY(0);
 }
 
