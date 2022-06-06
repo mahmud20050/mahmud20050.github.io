@@ -6,29 +6,34 @@
     box-sizing: border-box;
     /*font-family: sans-serif;*/
 }
-:root{
-    --red:#ef5050;
-    --light-black:#1d1d1d;
-    --grey:#373737;
+
+:root {
+    --red: #ef5050;
+    --light-black: #1d1d1d;
+    --grey: #373737;
     --liht-grey: #f9f9f9;
 
 }
-.root-red{
+
+.root-red {
     color: red;
 }
-.header{
-    background:var(--light-black);
+
+.header {
+    background: var(--light-black);
 }
-.header-top{
+
+.header-top {
     padding: 20px 0;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
 
 
-.logo-title{
+.logo-title {
     text-transform: uppercase;
     margin: 0;
     font-size: 22px;
@@ -36,51 +41,76 @@
     color: #fff;
 }
 
-.logo-text{
+.logo-text {
     color: #fff;
     margin: 0;
 
 }
-.logo img{
-    animation: rotate_360 2s linear infinite ;
+.class{
+    color: red;
 }
+.work-title{
+    color: #ffff;
+    text-transform: uppercase;
+}
+.work-title a :hover{
+    color: #ffff;
+}
+.work-text{
+    color: #727272;
+}
+.work-text:hover{
+    color: red;
+}
+
+
+
+.logo img {
+    animation: rotate_360 2s linear infinite;
+}
+
 @keyframes rotate_360 {
-    from{
+    from {
         transform: rotate(0);
         opacity: 0;
     }
-    to{
+    to {
         transform: rotate(360deg);
         opacity: 1;
     }
 }
-section{
+
+section {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("https://cdn.motor1.com/images/mgl/jzw4g/s1/2022-bmw-i4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
 }
-header{
+
+header {
     width: 100%;
 }
-nav h1{
+
+nav h1 {
     color: #ffffff;
     display: inline-block;
     font-size: 30px;
     font-weight: 700;
     margin: 20px 30px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
 }
-nav ul li a:after{
+
+nav ul li a:after {
     content: "";
     width: 100%;
     height: 4px;
@@ -91,7 +121,8 @@ nav ul li a:after{
     transition: 0.5s;
     transform: translateY(4px);
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     height: 4px;
     background: red;
     transform: translateY(0);
@@ -106,13 +137,13 @@ nav ul li a:hover::after{
 }
 
 
-.header-title h1{
+.header-title h1 {
     font-size: 50px;
     margin-bottom: 10px;
 }
 
 
-.header-title a{
+.header-title a {
     width: auto;
     height: 45px;
     font-size: 20px;
@@ -123,41 +154,50 @@ nav ul li a:hover::after{
     margin-right: 20px;
     padding: 3px 10px;
 }
-.header-title a:hover{
+
+.header-title a:hover {
     background: #fa4569;
     color: #ffffff;
     transition: 0.5s;
     border-radius: 20px;
     margin-right: 20px;
 }
-nav h1:hover{
-    background:  #fa4569;
+
+nav h1:hover {
+    background: #fa4569;
     color: #ffffff;
-    transition: 0.5s; border-radius: 20px;
+    transition: 0.5s;
+    border-radius: 20px;
     border-radius: 20px;
 }
-navbar{
+
+navbar {
     position: absolute;
     width: 100%;
     height: 100vh;
     left: 20px;
     right: 20px;
     top: 100%;
-    border-color:darkblue;
+    border-color: darkblue;
 }
-.item:nth-child(1){
+
+.item:nth-child(1) {
     background: black;
 }
-.item{
-  background: #0a53be;
+
+.item {
+    background: #0a53be;
 }
-.item{
+
+.item {
     background: #0c4128;
 }
-.item{
+
+.item {
     background: #5c636a;
 }
-.item{
+
+.item {
     background: #31d2f2;
 }
 
@@ -174,7 +214,7 @@ navbar{
     outline: unset;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     background: transparent;
 }
 
@@ -211,6 +251,6 @@ navbar{
 }
 
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
 
 }

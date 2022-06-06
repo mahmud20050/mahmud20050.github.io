@@ -82,7 +82,7 @@
 
 body {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     overflow: hidden;
 }
@@ -299,4 +299,8 @@ ul.nav_list {
 
 .row {
     display: flex;
+}
+.burhondn{
+    width: 100%;
+    height: 200px;background:black ;
 }
