@@ -46,46 +46,56 @@
     margin: 0;
 
 }
-.class{
+
+.class {
     color: red;
 }
-.work-title{
+
+.work-title {
     color: #ffff;
     text-transform: uppercase;
 }
-.work-title a :hover{
+
+.work-title a :hover {
     color: #ffff;
 }
-.work-text{
+
+.work-text {
     text-decoration: none;
     color: #727272;
 }
-.work-text:hover{
+
+.work-text:hover {
     color: blue;
 }
-.phone{
+
+.phone {
     display: flex;
 }
-.phone-icon{
+
+.phone-icon {
     font-size: 45px;
 }
-.phone-title{
+
+.phone-title {
     font-size: 14px;
     color: #616161;
     margin: 0;
     text-decoration: none;
 }
-.phone-text{
-    font-size:14px;
+
+.phone-text {
+    font-size: 14px;
     color: #ffff;
     text-decoration: none;
 }
-.icon{
+
+.icon {
     display: flex;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border:1px solid #ffff;
+    border: 1px solid #ffff;
     justify-content: center;
     align-items: center;
 }
