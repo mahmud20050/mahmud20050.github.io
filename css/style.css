@@ -41,6 +41,10 @@
     color: #fff;
 }
 
+.logo-title:hover {
+    color: red;
+}
+
 .logo-text {
     color: #fff;
     margin: 0;
@@ -91,6 +95,7 @@
 }
 
 .icon {
+    color: #ffff;
     display: flex;
     width: 30px;
     height: 30px;
@@ -100,10 +105,56 @@
     align-items: center;
 }
 
+.icon:hover {
+    background: #0c63e4;
+}
+
 
 .logo img {
     animation: rotate_360 2s linear infinite;
 }
+
+.navbar-collapse {
+    background-color: var(--red);
+}
+
+.nav-item:first-child {
+    padding-left: 2rem;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    background: var(--red);
+    font-weight: bold;
+    color: white !important;
+    padding: 1.5rem 1.2rem;
+
+}
+
+.custom-menu.nav-item.nav-link:hover {
+    color: #0c63e4;
+    background: black;
+}
+
+
+.nav-link.active {
+    background: #f95b5b;
+}
+
+.custom-btn {
+    background: #f95b5b;
+    color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.custom-dropdown:hover .custom-menu {
+    display: block;
+}
+
+
 
 @keyframes rotate_360 {
     from {
@@ -116,6 +167,7 @@
     }
 }
 
+/*
 section {
     width: 100%;
     height: 100vh;
@@ -144,24 +196,6 @@ nav ul li a {
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
-}
-
-nav ul li a:after {
-    content: "";
-    width: 100%;
-    height: 4px;
-    display: block;
-    background: transparent;
-    margin-top: 10px;
-    border-radius: 20px;
-    transition: 0.5s;
-    transform: translateY(4px);
-}
-
-nav ul li a:hover::after {
-    height: 4px;
-    background: #31d2f2;
-    transform: translateY(0);
 }
 
 .header-title {
@@ -204,18 +238,8 @@ nav h1:hover {
     color: #ffffff;
     transition: 0.5s;
     border-radius: 20px;
-    border-radius: 20px;
 }
 
-navbar {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    left: 20px;
-    right: 20px;
-    top: 100%;
-    border-color: darkblue;
-}
 
 .item:nth-child(1) {
     background: black;
@@ -289,4 +313,5 @@ navbar {
 
 @media (max-width: 400px) {
 
-}
+
+}*/
