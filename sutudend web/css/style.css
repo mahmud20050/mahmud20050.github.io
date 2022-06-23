@@ -92,8 +92,8 @@
 }
 
 .icon:hover {
-    background: var(--red);
-    border: 1px solid indianred;
+    background: blue;
+    border: 1px solid #0c63e4;
 }
 
 .work-text:hover {
@@ -321,7 +321,8 @@
     bottom: -48px;
     z-index: 3;
 }
-.service-item{
+
+.service-item {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -333,16 +334,18 @@
     overflow: hidden;
     z-index: 2;
 }
-.service-item:hover{
+
+.service-item:hover {
     z-index: 4;
 
 }
-.service-item:hover .service-hover{
+
+.service-item:hover .service-hover {
     z-index: 4;
     opacity: 1;
 }
 
-.service-hover{
+.service-hover {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -355,7 +358,8 @@
     transition: all .1s ease-in-out;
 
 }
-.service-hover_bg{
+
+.service-hover_bg {
     width: 100%;
     height: 100%;
     background: var(--red);
@@ -367,6 +371,24 @@
     padding: 10px;
 }
 
+
+.clients {
+    background: #f9f9f9;
+    padding: 80px 0;
+}
+
+.border-red {
+    border: 1px solid var(--red);
+}
+
+.btn-red {
+    text-transform: uppercase;
+    color: white;
+    background: var(--red);
+}
+video[poster]{
+    object-fit: cover;
+}
 
 @keyframes rotate_360 {
     from {
