@@ -255,7 +255,7 @@
 }
 
 .carousel-indicators button {
-    border: 1px solid #fff !important;
+    border: 3px solid #fff !important;
 }
 
 [aria-current=true].active::before {
@@ -529,6 +529,54 @@
 .cursor-pointer {
     cursor: pointer;
 }
+
+.comments {
+    background: url("../images/comments.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.comments .carousel-indicators {
+    position: unset;
+    width: 100%;
+    margin: 60px 0 0;
+    align-items: center;
+}
+
+.comments .carousel-indicators button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 1;
+}
+
+.comments .carousel-indicators button.active {
+    border: 3px solid var(--red) !important;
+}
+
+.comments .carousel-indicators button {
+    border: 0 solid !important;
+}
+
+.comments .carousel-indicators button::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+.comments .carousel-indicators [aria-current=true].active::before {
+    content: "";
+    position: absolute;
+    background: var(--red);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
 
 @keyframes rotate_360 {
     from {
