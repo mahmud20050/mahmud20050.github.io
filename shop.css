@@ -11,13 +11,34 @@
 }
 
 
+
 maina {
     width: 90%;
     margin: 60px auto;
     font-family: sans-serif;
 }
-main header.indicator{
+
+.indicator {
+    justify-content: space-around;
+    top: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 80px;
+    background: whitesmoke;
+    z-index: 1;
+    position: fixed;
+}
+
+main header.indicator {
+    width: 100%;
+    height: 90px;
     background-attachment: fixed;
+
 }
 
 header {
@@ -69,10 +90,12 @@ header ul li.active a {
     cursor: pointer;
 }
 
+
 .product-field ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .product-field ul li {
@@ -176,7 +199,8 @@ li h4 {
     color: #555;
     text-shadow: 1px 1px 2px black;
 }
-mahmud input{
+
+mahmud input {
     width: 100%;
     height: 12px;
     font-size: 100px;
