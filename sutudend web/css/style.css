@@ -6,7 +6,6 @@
     list-style: none;
 }
 
-
 :root {
     --red: #ef5050;
     --light-black: #1d1d1d;
@@ -575,6 +574,161 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
+}
+
+.purchase-header {
+    padding: 20px 10px;
+    background: var(--red);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.purchase-main {
+    position: relative;
+    padding: 30px 10px;
+    background: url("https://media.istockphoto.com/photos/car-mechanic-holding-clipboard-and-checking-to-maintenance-vehicle-by-picture-id1219905269?k=20&m=1219905269&s=612x612&w=0&h=Dpb3QS5zBWFqoUoAGRVHoVt3MoizAEWipVSh0ZQfd74=") no-repeat center center;
+}
+
+.purchase-main::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(239, 80, 80, 0.5);
+    z-index: 1;
+}
+
+.purchase-main > * {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.purchase-main_price {
+    font-size: 75px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.purchase-list {
+    border: 1px solid #ccc;
+    border-top: unset;
+    padding: 30px;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 250px;
+}
+
+.inputBox input {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 1em;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+}
+
+.contact-form {
+    background: var(--light-black);
+    padding: 40px;
+}
+
+
+textarea.form-control {
+    max-height: 200px;
+}
+
+.news-item_data {
+    background: var(--red);
+    color: #fff;
+    text-transform: uppercase;
+    width: 80px;
+    margin-bottom: 0;
+    padding: 14px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.news-item {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.news-item .card-title {
+    font-size: 18px;
+}
+
+.news-item_icons {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #6c757d;
+}
+
+.patnores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background: var(--light-black);
+}
+
+.footer .row {
+    padding: 80px 0;
+}
+
+.footer-icons i {
+    margin-right: 10px;
+}
+
+.footer-icons i:last-child {
+    margin-right: 0;
+}
+
+.footer-news {
+    width: 100%;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.w-18 {
+    margin-right: 15px;
+    width: 18%;
+}
+.w-18:last-child{
+    margin-right:0;
 }
 
 
