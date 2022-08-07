@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bozor%20inomarka.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:40;"></span>
+        <span style="--i:28;"></span>
+
+    </div>
+
+
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                                  <i class="fa fa-home"></i>
+                    </span>
+                    <span class="text ">home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <span class="text">user</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <i class="fa fa-bar-chart"></i>
+                    </span>
+                    <span class="text">chart</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                  <i class="fa fa-camera"></i>
+                    </span>
+                    <span class="text">camera</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <i class="fa fa-file"></i>
+                    </span>
+                    <span class="text">file</span>
+                </a>
+            </li>
+            <div class="indicator">
+
+            </div>
+        </ul>
+
+
+        <span class="ikonka">
+            <input src="search">
+            <button>    <i class="fa fa-search">
+
+                        </i></button>
+
+     </span>
+        <span class="telegram">
+<a href="" target="_blank"> <i class="fa fa-telegram"></i></a>
+
+           <a href="" target="_blank">    <i class="fa fa-instagram"></i></a>
+            <a href="" target="_blank">     <i class="fa fa-facebook"></i></a>
+
+
+
+        </span>
+    </div>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+    </script>
+</body>
+</html>
