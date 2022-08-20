@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="pardalar%20olami.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<main>
+    <div class="cover">
+        <div class="left">
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                <i class="bx bx-taxi"></i>
+            </p>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                <i class="bx bx-trip"></i>
+            </p>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                <i class="bx bx-wifi"></i>
+            </p>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                <i class="bx bx-station"></i>
+            </p>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                <i class="bx bx-world"></i>
+            </p>
+        </div>
+        <div class="icon">
+            <svg>
+                <!-- center-->
+                <g fill="none" stroke="#ccc" stroke-width="10">
+                    <line x1="350" y1="700" x2="350" y2="400"/>
+                    <line x1="350" y1="700" x2="350" y2="400" class="line"/>
+                    <circle cx="350" cy="300" r="100"></circle>
+                    <circle cx="350" cy="300" r="100" class="circle">
+                    </circle>
+                </g>
+
+                <!-- left-->
+                <g fill="none" stroke="royalblue" stroke-width="5">
+                    <path d="M300 700 , C350 400, -100 400, 300 50"/>
+                    <line x1="165" y1="200" x2="135" y2="180" class="l1"/>
+                    <line x1="135" y1="310" x2="105" y2="290" class="l2"/>
+                    <line x1="210" y1="600" x2="145" y2="550" class="l3"/>
+
+                    <path d="M200 700 , Q250 500, 50 400"/>
+                </g>
+                <!-- right-->
+                <g fill="none" stroke="royalblue" stroke-width="5">
+                    <path d="M400 700 , C400 400, 750 400, 400 100"/>
+                    <line x1="520" y1="230" x2="545" y2="200" class="r1"/>
+                    <line x1="555" y1="310" x2="580" y2="300" class="r2"/>
+                    <line x1="495" y1="600" x2="580" y2="550" class="r3"/>
+                    <path d="M500 700 , Q450 500, 700 400"/>
+                </g>
+            </svg>
+
+            <p class="ar"></p>
+        </div>
+        <div class="right">
+            <p>
+                <i class="bx bx-cylinder"></i>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </p>
+            <p>
+                <i class="bx bx-cycling"></i>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </p>
+            <p>
+                <i class="bx bx-street-view"></i>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </p>
+            <p>
+                <i class="bx bx-accessibility"></i>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </p>
+            <p>
+                <i class="bx bx-map-pin"></i>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </p>
+        </div>
+    </div>
+    <h5 class="sw"><i class="bx bx-power-off"></i></h5>
+</main>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    let swc = document.querySelector('.sw');
+    swc.onclick = () => {
+        swc.parentElement.classList.toggle('on');
+    }
+
+</script>

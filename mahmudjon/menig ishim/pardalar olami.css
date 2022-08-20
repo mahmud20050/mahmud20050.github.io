@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 98%;
+    height: 840px;
+    margin: 10px auto 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    background: whitesmoke;
+}
+
+.cover {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.left, .right {
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.left > p, .right > p {
+    width: 100%;
+    height: 70px;
+    left: 90%;
+    top: -2px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px dotted royalblue;
+    padding: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 12.5s;
+}
+
+i.bx {
+    background: royalblue;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    line-height: 1;
+    color: white;
+    shape-outside: circle();
+    shape-margin: 10px;
+
+}
+
+.left > p:nth-child(2) .bx, .right > p:nth-child(2) .bx {
+    background: purple;
+}
+
+.left > p:nth-child(3) .bx, .right > p:nth-child(3) .bx {
+    background: red;
+}
+
+.left > p:nth-child(5) .bx, .right > p:nth-child(5) .bx {
+    background: magenta;
+}
+
+.left > p:nth-child(2) {
+    top: 120px;
+    left: 40%;
+    border-color: purple;
+    transition-delay: 12s;
+}
+
+.left > p:nth-child(3) {
+    top: 240px;
+    left: 30%;
+    border-color: red;
+    transition-delay: 11.5s;
+}
+
+.left > p:nth-child(4) {
+    top: 360px;
+    left: 20%;
+    transition-delay: 12s;
+}
+
+.left > p:nth-child(5) {
+    top: 510px;
+    left: 40%;
+    border-color: magenta;
+    transition-delay: 22s;
+}
+
+.right > p {
+    left: -100%;
+    transition-delay: 17.5s;
+}
+
+.right > p:nth-child(2) {
+    top: 150px;
+    left: -50px;
+    border-color: purple;
+    transition-delay: 17s;
+}
+
+.right > p:nth-child(3) {
+    top: 260px;
+    left: -40px;
+    border-color: red;
+    transition-delay: 16.5s;
+}
+
+.right > p:nth-child(4) {
+    top: 360px;
+    left: -10px;
+    transition-delay: 23s;
+}
+
+.right > p:nth-child(5) {
+    top: 510px;
+    left: -40px;
+    border-color: magenta;
+    transition-delay: 22s;
+}
+
+.icon {
+    width: 50%;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    margin: 0 15px 0 0;
+    padding: 0 15px 0 0;
+}
+
+line, circle, path {
+    transition: 5s;
+
+}
+
+.circle {
+    stroke: purple;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 630;
+    transition-delay: 5s;
+    padding-left: 29px;
+}
+
+.line {
+    stroke: purple;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+}
+
+.ar {
+    position: absolute;
+    top: 231px;
+    left: 42.6%;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-90deg);
+    border-radius: 50%;
+    transition: 5s;
+    transition-delay: 5s;
+}
+
+.ar:before,
+.ar:after {
+
+    content: '';
+    position: inherit;
+    width: 20px;
+    height: 50%;
+    left: 45%;
+    top: 46%;
+    border-radius: 80px;
+    background: purple;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.ar:after {
+    clip-path: none;
+    width: 12px;
+    height: 12px;
+    left: 47%;
+    top: 48%;
+    background: white;
+}
+
+g > path:first-child {
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+    transition-delay: 15s;
+}
+
+g > path:last-child {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    transition-delay: 20s;
+}
+
+g:nth-child(2) > path > :first-child {
+    transition-delay: 10s;
+}
+
+.l1, .l2, .r1, .r2 {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    transition: 1s;
+}
+
+.l1 {
+    transition-delay: 12s;
+}
+
+.l2 {
+    transition-delay: 11.5s;
+}
+
+.r1 {
+    transition-delay: 16.9s;
+}
+
+.r2 {
+    transition-delay: 16.4s;
+}
+
+.l3, .r3 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    transition: 2s;
+    transition-delay: 21s;
+}
+
+.sw {
+    width: 100px;
+    height: calc(100% - 10);
+    line-height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background: radial-gradient(circle at 50px 50px, #ff00f7, black);
+    position: relative;
+}
+
+main.on .circle {
+    stroke-dashoffset: 124;
+}
+
+main.on .ar {
+    transform: rotate(200deg);
+}
+
+main.on .line,
+main.on g > path:first-child,
+main.on g > path:last-child,
+main.on .l1,
+main.on .l2,
+main.on .l3,
+main.on .r1,
+main.on .r2,
+main.on .r3 {
+    stroke-dashoffset: 0;
+}
+
+main.on .left > p,
+main.on .right > p {
+    opacity: 1;
+}
+
+
+
+
+
+
