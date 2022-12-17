@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
+
+}
+
+.div .round {
+    margin: 222px;
+    left: 200px;
+    cursor: pointer;
+
+
+}
+
+/* Side bar css start */
+.wrapper {
+    display: flex;
+}
+
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background: #092A5B;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar-lists {
+    padding: 30px 25px;
+}
+
+.sidebar-lists_item {
+    padding: 15px 0;
+}
+
+.sidebar-lists_item a {
+    color: white;
+    line-height: 22px;
+}
+
+.sidebar-lists_item span {
+    width: 180px;
+}
+
+.sidebar-icon path {
+    fill: white;
+}
+
+.sidebar-lists_item:hover .sidebar-icon path,
+.sidebar-lists_item:hover a,
+.sidebar-lists_item:hover {
+    fill: #00A5FF;
+    color: #00A5FF;
+}
+
+.sidebar-lists_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div h1 {
+    background: url("https://st.depositphotos.com/1162190/4854/i/600/depositphotos_48548449-stock-photo-eid-mubarak-background.jpg");
+}
+
+.logo {
+    padding: 30px 25px;
+}
+
+.view img p {
+    backdrop-filter: blur(288,);
+}
+
+.logo-link {
+    display: block;
+    width: 100%;
+}
+
+
+.logo-img {
+    width: 100%;
+}
+
+.view {
+    width: 100%;
+    height: 100vh;
+    background: #F1F6FB;
+    padding: 20px 30px;
+}
+
+
+#vehicle1:checked ~ * .sidebar {
+    width: 0;
+    opacity: 0;
+}
+
+.label {
+    cursor: pointer;
+}
+
+/* Side bar css end */
+
+
+/*.navbar-block {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*    margin-top: 30px;*/
+/*}*/
+
+
+
+.row {
+    display: flex;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+@keyframes easy {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    75% {
+        transform: scale(1.6);
+    }
+
+    100% {
+        transform: scale(1.8);
+    }
+}
+
